@@ -1,0 +1,63 @@
+@model IEnumerable<bookingadmintest.Models.Workout>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Träningpass</h1>
+
+@foreach (var item in Model)
+{
+    <div class="card p-3 mb-3 text-center" style="max-width: 800px;">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.WorkoutName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.WorkoutDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Instructor)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Duration)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Cost)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Quantity)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.WorkoutName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.WorkoutDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Instructor)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Duration) min
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cost) :-
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity) st
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="text-center">
+                <a class="text-white btn btn-success" asp-route-id="@item.Id" asp-action="Create">Boka</a>
+        </div>
+    </div>
+}

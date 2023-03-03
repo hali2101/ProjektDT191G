@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{673C9DBB-2AB9-41AF-BB2D-071C1F7DA950}|https">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GymBookingApp/Models/Booking.cs">
+    <Files>
+      <File FileName="GymBookingApp/Controllers/UserController.cs" Line="76" Column="111" />
+      <File FileName="GymBookingApp/Controllers/BookingController.cs" Line="58" Column="1" />
+      <File FileName="GymBookingApp/Controllers/BookController.cs" Line="13" Column="45" />
+      <File FileName="GymBookingApp/Models/Booking.cs" Line="35" Column="44" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProjektDT191G" expanded="True">
+            <Node name="GymBookingApp" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Booking.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="User" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.GymBookingApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
