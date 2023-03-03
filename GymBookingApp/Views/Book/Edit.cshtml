@@ -4,38 +4,39 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Ändra</h1>
+<h1 class="h2">Ändra bokning</h1>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
+                <input asp-for="Name" class="form-control mt-1" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
+                <input asp-for="Email" class="form-control mt-1" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label asp-for="Phonenumber" class="control-label"></label>
-                <input asp-for="Phonenumber" class="form-control" />
+                <input asp-for="Phonenumber" class="form-control mt-1" />
                 <span asp-validation-for="Phonenumber" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label asp-for="BookingDate" class="control-label"></label>
-                <input asp-for="BookingDate" class="form-control" />
+                <input asp-for="BookingDate" class="form-control mt-1" />
                 <span asp-validation-for="BookingDate" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label asp-for="WorkoutId" class="control-label"></label>
-                <select asp-for="WorkoutId" class="form-control" asp-items="ViewBag.WorkoutId"></select>
+                <select asp-for="WorkoutId" class="form-control mt-1" asp-items="ViewBag.WorkoutId"></select>
+                <span asp-validation-for="WorkoutId" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <input type="submit" value="Spara ändringar" class="btn btn-primary" />
             </div>
         </form>
